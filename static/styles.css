@@ -1,0 +1,159 @@
+/* Global styles */
+body {
+    background: linear-gradient(135deg, #f6f8fc, #e1eaf6);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    animation: fadeScale 0.2s ease-out forwards;
+    background-color: #fff;
+    width: 90vw;              /* responsive width across devices */
+    max-width: 650px;         /* upper bound for larger screens */
+    height: 65vh;             /* fixed vertical size regardless of content */
+    min-height: 400px;        /* keeps it tall enough even on smaller devices */
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px #aaa;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-dashboard {
+    animation: fadeScale 0.2s ease-out forwards;
+    background-color: #fff;
+    width: 90vw;              /* responsive width across devices */
+    max-width: 650px;         /* upper bound for larger screens */
+    height: 65vh;             /* fixed vertical size regardless of content */
+    min-height: 400px;        /* keeps it tall enough even on smaller devices */
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px #aaa;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-header h2 {
+    margin: 0;
+    text-align: center;
+}
+
+
+.dashboard-main {
+    margin: 10px;
+    min-height: 150px; /* space for future content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+/* Input & form element spacing */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+form button {
+    animation: slideFade 0.2s ease-out forwards;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    border: 1px solid #bbb;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    border-color: #030303;
+}
+
+/* Link styled as button */
+a.button-link {
+    animation: slideFade 0.8s ease-out forwards;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+a.button-link:hover {
+    background-color: #0e61b9;
+    border-color: #030303;
+}
+
+/* Optional heading styling */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+p {
+    text-align: center;
+}
+
+
+@keyframes fadeScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes slideFade {
+    from {
+    opacity: 0;
+    transform: translateY(10px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.error-message-password-username {
+    animation: slideFade 1.4s ease-out forwards;
+    color: red;
+    background-color: #fdecea;
+    border: 1px solid #e0b4b4;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
